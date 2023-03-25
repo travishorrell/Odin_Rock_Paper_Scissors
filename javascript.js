@@ -79,12 +79,12 @@ function game()
     {
         playRound()
     }
-    alert("Player Score: " + playerScore + " Computer Score: " + computerScore)
-    if(playerScore > computerScore)
+    alert("Player Score: " + playRound() + " Computer Score: " + playRound())
+    if(playRound().playerScore > platRound().computerScore)
     {
         alert("You Win!")
     }
-    else if(playerScore < computerScore)
+    else if(playRound().playerScore > platRound().computerScore)
     {
         alert("You Lose!")
     }
