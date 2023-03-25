@@ -26,35 +26,35 @@ function playRound(computerPlay)
 
     if(userSelection === computerSelection)
     {
-        console.log("It's a tie")
+        alert("It's a tie")
     }
     else if(userSelection === "ROCK" && computerSelection === "PAPER")
     {
-        console.log("You Lose! Paper beats Rock")
+        alert("You Lose! Paper beats Rock")
     }
     else if(userSelection === "ROCK" && computerSelection === "SCISSORS")
     {
-        console.log("You Win! Rock beats Scissors")
+        alert("You Win! Rock beats Scissors")
     }
     else if(userSelection === "PAPER" && computerSelection === "ROCK")
     {
-        console.log("You Win! Paper beats Rock")
+        alert("You Win! Paper beats Rock")
     }
     else if(userSelection === "PAPER" && computerSelection === "SCISSORS")
     {
-        console.log("You Lose! Scissors beats Paper")
+        alert("You Lose! Scissors beats Paper")
     }
     else if(userSelection === "SCISSORS" && computerSelection === "ROCK")
     {
-        console.log("You Lose! Rock beats Scissors")
+        alert("You Lose! Rock beats Scissors")
     }
     else if(userSelection === "SCISSORS" && computerSelection === "PAPER")
     {
-        console.log("You Win! Scissors beats Paper")
+        alert("You Win! Scissors beats Paper")
     }
     else
     {
-        console.log("Thats not a valid play. Try again.")
+        alert("Thats not a valid play. Try again.")
     }
  }
 
@@ -62,10 +62,9 @@ function game()
 {
     for(let i = 0; i < 5; i++)
     {
-        console.log("Round " + (i + 1) + "!")
         playRound()
     }
-    console.log("Game Over")
+    alert("Game Over, Thanks for palying my game!")
 }
 
 game()
