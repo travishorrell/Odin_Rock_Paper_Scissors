@@ -79,7 +79,9 @@ function game()
     {
         playRound()
     }
+    
     alert("Player Score: " + playRound() + " Computer Score: " + playRound())
+    
     if(playRound().playerScore > platRound().computerScore)
     {
         alert("You Win!")
@@ -88,6 +90,7 @@ function game()
     {
         alert("You Lose!")
     }
+    
     alert("Game Over, Thanks for palying my game!")
 }
 
