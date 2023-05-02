@@ -1,5 +1,5 @@
 body{
-    background-color:#1E6DFF;
+    background-color:#3882f6;
     margin: 0px;
     padding: 0px;
 }
@@ -9,6 +9,19 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    font-size: 30px;
+    color: #f9faf8;
+    background-color: #1f2937;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu{
@@ -26,7 +39,7 @@ a{
     justify-content: center;
     padding: 10px 30px 10px 30px;
     text-decoration: none;
-    color: #1E6DFF;
+    color: #f9faf8;
     border-radius: 5px;
     background-color: #555555;
 }
@@ -36,8 +49,22 @@ a:hover{
     justify-content: center;
     padding: 10px 30px 10px 30px;
     text-decoration: none;
-    color: #1E6DFF;
+    color: #f9faf8;
     border-radius: 5px;
     background-color: #555555;
     border: 1px solid #ffffff;
+}
+
+.main-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px; 
+}
+
+.image{
+    border: 5px solid #ffffff;
+    border-radius: 20px;
 }
