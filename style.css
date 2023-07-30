@@ -1,7 +1,17 @@
 body{
-    background-color:#1E6DFF;
+    background-color: #3296BA;
     margin: 0px;
     padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover{
+    color: gray;
 }
 
 .mainContent{
@@ -11,21 +21,43 @@ body{
     align-items: center;
 }
 
-.happyImage{
+.navBar{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    width: 100%;
+    height: 75px;
     justify-content: center;
+    background-color: #102F3B;
+    
 }
 
-.image{
+.navBarItems{
+    display: flex;
+    width: 1024px;
+    height: 75px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contentItems{
+    display: flex;
+    width: 1024px;
+    height: 450px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #102F3B;
     border-radius: 10px;
-    border: 10px solid white;
-    box-shadow: 5px 5px 20px black;
 }
 
-.title{
-    text-align: center;
-    color: white;
-    font-size: 30px;
+.item{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    
+    border-radius: 10px;
+}
+
+.item:hover{
+    scale: 110%;
 }
