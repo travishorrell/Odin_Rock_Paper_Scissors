@@ -26,8 +26,7 @@ function playRound(computerPlay)
 
     getComputerChoice()
     computerSelection = getComputerChoice()
-    let userPlay = prompt("Rock, Paper, Scissors. Enter Your play")
-    let userSelection = userPlay.toUpperCase()
+    let userSelection = document.getElementById()
 
     if(userSelection === computerSelection)
     {
@@ -72,7 +71,6 @@ function playRound(computerPlay)
  }
 
 
-
 function game()
 {
     for(let i = 0; i < 5; i++)
@@ -91,7 +89,7 @@ function game()
     alert("Game Over, Thanks for palying my game!")
 }
 
-game()
+//game()
 
 
 
