@@ -20,12 +20,21 @@
         </div>
     </div>
     <div class="mainContent">
-        <label for=""></label>
+        <h3>Play Rock Paper Scissors</h3>
         <div class="contentItems">
-            <div class="item"><img id="rock" onclick="game()" src="images/Rock.png" alt="Rock"></div>
-            <div class="item"><img id="paper" onclick="game()" src="images/Paper.png" alt="Paper"></div>
-            <div class="item"><img id="scissors" onclick="game()" src="images/Scissors.png" alt="Scissors"></div>
+            <div class="item"><img onclick="playRound('ROCK')" src="images/Rock.png" alt="Rock"></div>
+            <div class="item"><img onclick="playRound('PAPER')" src="images/Paper.png" alt="Paper"></div>
+            <div class="item"><img onclick="playRound('SCISSORS')" src="images/Scissors.png" alt="Scissors"></div>
         </div>
+    </div>
+
+    <div class="results">
+        <label id="computerScore">Computer Score:0</label>
+        <label id="humanScore">Human Score:0</label>
+    </div>
+
+    <div class="gameResults">
+        <label id="ResultLabel"></label>
     </div>
 
 </body>

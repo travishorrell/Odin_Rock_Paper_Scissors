@@ -14,6 +14,13 @@ a:hover{
     color: gray;
 }
 
+h3{
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+}
+
 .mainContent{
     display: flex;
     justify-content: center;
@@ -25,7 +32,8 @@ a:hover{
     display: flex;
     width: 100%;
     height: 75px;
-    justify-content: center;
+    justify-content: 
+    center;
     background-color: #102F3B;
     
 }
@@ -54,10 +62,27 @@ a:hover{
     width: 150px;
     height: 150px;
     justify-content: center;
-    
+    flex-direction: row;
     border-radius: 10px;
 }
 
 .item:hover{
     scale: 110%;
+}
+
+.results{
+    display: flex;
+    margin-top: 30px;
+    font-size: 26px;
+    color: white;
+    justify-content: center;
+    gap: 40px;
+}
+
+.gameResults{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 22px;
+    color: white;
 }

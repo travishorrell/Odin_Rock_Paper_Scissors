@@ -17,7 +17,7 @@ function getComputerChoice() {
 }
 
 
-function playRound(computerPlay)
+function playRound(userChose)
 {
 
     //keep score
@@ -25,57 +25,59 @@ function playRound(computerPlay)
     let computerScore = 0
 
     getComputerChoice()
-    computerSelection = getComputerChoice()
-    let userSelection = document.getElementById()
+    let computerSelection = getComputerChoice()
+    let userSelection = userChose;
 
     if(userSelection === computerSelection)
     {
-        alert("It's a tie")
+        document.getElementById("ResultLabel").innerHTML = "It's a tie";
     }
     else if(userSelection === "ROCK" && computerSelection === "PAPER")
     {
         computerScore++
-        alert("You Lose! Paper beats Rock")
+        document.getElementById("ResultLabel").innerHTML = "You Lose! Paper beats Rock";
+        //alert("You Lose! Paper beats Rock")
     }
     else if(userSelection === "ROCK" && computerSelection === "SCISSORS")
     {
         playerScore++
-        alert("You Win! Rock beats Scissors")
+        document.getElementById("ResultLabel").innerHTML = "You Win! Rock beats Scissors";
+        //alert("You Win! Rock beats Scissors")
     }
     else if(userSelection === "PAPER" && computerSelection === "ROCK")
     {
         playerScore++
-        alert("You Win! Paper beats Rock")
+        document.getElementById("ResultLabel").innerHTML = "You Win! Paper beats Rock";
+        //alert("You Win! Paper beats Rock")
     }
     else if(userSelection === "PAPER" && computerSelection === "SCISSORS")
     {
         computerScore++
-        alert("You Lose! Scissors beats Paper")
+        document.getElementById("ResultLabel").innerHTML = "You Lose! Scissors beats Paper";
+        //alert("You Lose! Scissors beats Paper")
     }
     else if(userSelection === "SCISSORS" && computerSelection === "ROCK")
     {
         computerScore++
-        alert("You Lose! Rock beats Scissors")
+        document.getElementById("ResultLabel").innerHTML = "You Lose! Rock beats Scissors";
+        //alert("You Lose! Rock beats Scissors")
     }
     else if(userSelection === "SCISSORS" && computerSelection === "PAPER")
     {
         playerScore++
-        alert("You Win! Scissors beats Paper")
-    }
-    else
-    {
-        alert("Thats not a valid play. Try again.")
+        document.getElementById("ResultLabel").innerHTML = "You Win! Scissors beats Paper";
+        //alert("You Win! Scissors beats Paper")
     }
 
     return playerScore, computerScore
  }
 
 
-function game()
+function game(userClick)
 {
     for(let i = 0; i < 5; i++)
     {
-        playRound()
+        playRound(userClick);
     }
     alert("Player Score: " + playRound() + " Computer Score: " + playRound())
     if(playRound().playerScore > platRound().computerScore)
@@ -89,7 +91,6 @@ function game()
     alert("Game Over, Thanks for palying my game!")
 }
 
-//game()
 
 
 
