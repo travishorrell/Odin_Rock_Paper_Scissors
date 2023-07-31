@@ -62,6 +62,7 @@ h3{
     width: 150px;
     height: 150px;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     border-radius: 10px;
 }
