@@ -64,7 +64,9 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border-radius: 10px;
+    padding: 0;
+    border: none;
+    background: none;
 }
 
 .item:hover{
