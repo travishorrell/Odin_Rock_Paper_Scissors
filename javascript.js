@@ -44,6 +44,35 @@ buttons.forEach(button =>{
 })
 
 
+//Other was to get the users click as input
+/*
+  // Get references to the buttons
+const button1 = document.getElementById('button1');
+const button2 = document.getElementById('button2');
+const button3 = document.getElementById('button3');
+
+// Add event listeners to each button
+button1.addEventListener('click', function() {
+  handleButtonClick(1);
+});
+
+button2.addEventListener('click', function() {
+  handleButtonClick(2);
+});
+
+button3.addEventListener('click', function() {
+  handleButtonClick(3);
+});
+
+// Function to handle button clicks
+function handleButtonClick(buttonNumber) {
+  console.log('Button ' + buttonNumber + ' clicked.');
+  // Add your logic here for what you want to do when each button is clicked.
+}
+
+*/
+
+
 /* ChatGPT Code
   <script>
     var playerScore = 0;
