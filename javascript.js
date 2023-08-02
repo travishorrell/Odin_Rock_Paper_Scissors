@@ -14,9 +14,9 @@
         resultMessage = "It's a tie!";
       } 
       else if (
-        (userChoice == "rock" && computerChoice == "scissors") ||
-        (userChoice == "paper" && computerChoice == "rock") ||
-        (userChoice == "scissors" && computerChoice == "paper")) 
+        (userChoice == "ROCK" && computerChoice == "SCISSORS") ||
+        (userChoice == "PAPER" && computerChoice == "ROCK") ||
+        (userChoice == "SCISSORS" && computerChoice == "PAPER")) 
       {
         resultMessage = "You win!";
         playerScore++;
@@ -33,8 +33,8 @@
       var playerScoreElement = document.getElementById('humanScore');
       var computerScoreElement = document.getElementById('computerScore');
 
-      playerScoreElement.textContent = playerScore;
-      computerScoreElement.textContent = computerScore;
+      playerScoreElement.textContent = "Human Score: " + playerScore;
+      computerScoreElement.textContent = "Computer Score: " + computerScore;
 
       if (round == maxRounds) {
         if (playerScore > computerScore) {
