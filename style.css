@@ -80,6 +80,7 @@ h3{
     color: white;
     justify-content: center;
     gap: 40px;
+    text-align: center;
 }
 
 .gameResults{

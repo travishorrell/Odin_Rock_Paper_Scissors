@@ -1,8 +1,7 @@
-    var playerScore = 0;
-    var computerScore = 0;
-    var maxRounds = 5;
-    var round = 1;
-
+var playerScore = 0;
+var computerScore = 0;
+    
+    
     function playGame(userChoice) {
       var choices = ['ROCK', 'PAPER', 'SCISSORS'];
       var computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -36,16 +35,15 @@
       playerScoreElement.textContent = "Human Score: " + playerScore;
       computerScoreElement.textContent = "Computer Score: " + computerScore;
 
-      if (round == maxRounds) {
+      if (playerScore == 5 || computerScore == 5) {
         if (playerScore > computerScore) {
-          resultElement.innerHTML += "<br>Game over. You win!";
-        } else if (playerScore < computerScore) {
-          resultElement.innerHTML += "<br>Game over. Computer wins!";
+          resultElement.innerHTML = "<span style='color: green';><br>Game over. You win!\nReload the page to play again</span>";
         } else {
-          resultElement.innerHTML += "<br>Game over. It's a tie!";
+          resultElement.innerHTML = "<span style='color: red';><br>Game over. Computer wins!\nReload the page to play again</span>";
         }
         disableButtons();
-      } else {
+      } 
+      else {
         round++;
       }
     }
