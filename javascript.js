@@ -1,13 +1,46 @@
-var playerScore = 0;
-var computerScore = 0;
+let playerScore = 0;
+let computerScore = 0;
+
     
 function game(humanChoice)
 {
   let computerChoiceArray = ["ROCk", "PAPER", "SCISSORS"];
   let computerChoice = computerChoiceArray[Math.floor(Math.random() * 3)];
+  let resultMessage;
 
+  while(playerScore <= computerScore)
+  {
+      //If theirs a tie
+    if(humanChoice == computerChoice)
+    { 
+      resultMessage = "Game tie, try again!";
+    }
+    //If the human wins
+    else if(humanChoice == "ROCK" && computerChoice == "SCISSORS"
+          || humanChoice == "PAPER" && computerChoice == "ROCK"
+          || humanChoice == "SCISSORS" && computerChoice == "PAPER")
+          {
+            resultMessage = "Human Wins";
+            playerScore++;
+          }
+          else
+          {
+            resultMessage = "Computer Wins";
+            computerScore++;
+          }
+    document.getElementById("ResultLabel").innerHTML = resultMessage;
+    document.getElementById("coomputerScore").innerHTML = computerScore;
+    document.getElementById("humanScore").innerHTML = playerScore;
+  }
 
-  if()
+  if(playerScore > computerScore)
+  {
+    document.getElementById("ResultLabel").innerHTML = "Human Won!, reload page to play agian";
+  }
+  else
+  {
+    document.getElementById("ResultLabel").innerHTML = "Computer Won!, This is the start of skynet. reload page to play again";
+  }
 }
 
 
