@@ -30,19 +30,29 @@ function game(humanChoice)
             console.log(computerScore);
           }
     document.getElementById("ResultLabel").innerHTML = resultMessage;
-    document.getElementById("computerScore").innerHTML = computerScore;
-    document.getElementById("humanScore").innerHTML = playerScore;
-  }
+    document.getElementById("computerScore").innerHTML = "Computer Score: " + computerScore;
+    document.getElementById("humanScore").innerHTML = "Human Score: " + playerScore;
+  
 
-  if(playerScore > computerScore)
-  {
-    document.getElementById("ResultLabel").innerHTML = "Human Won!, reload page to play agian";
-  }
-  else
-  {
-    document.getElementById("ResultLabel").innerHTML = "Computer Won!, This is the start of skynet. reload page to play again";
-  }
+    if(playerScore == 5)
+    {
+      document.getElementById("ResultLabel").innerHTML = "Human Won!, reload page to play agian";
+      disableButtons();
+    }
+    else if(computerScore == 5)
+    {
+      document.getElementById("ResultLabel").innerHTML = "Computer Won!, This is the start of skynet. reload page to play again";
+      disableButtons();
+    }
+}
 
+  function disableButtons()
+  {
+    let buttons = document.getElementsByClassName('item');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+      }
+  }
 
 
 
